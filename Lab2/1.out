@@ -1,0 +1,247 @@
+=========== New Iteration =========
+===== Cells =====
+1: 1 => n1 n3 
+2: 1 => n1 n2 
+3: 0 => n1 
+4: 0 => n2 
+5: 1 => n3 
+===== Nets =====
+n1: c1 c2 c3 
+(A, B) 1, 2
+n2: c2 c4 
+(A, B) 1, 1
+n3: c1 c5 
+(A, B) 0, 2
+===== Buckets =====
+Total Bucket: 2
+gain (-1) :c1 c5 
+gain (1) :c2 c3 c4 
+
+PMax = 2
+Total (A, B) 2, 3
+Cut Size = 2
+======== Result ======
+c1 in 1
+c2 in 1
+c3 in 0
+c4 in 0
+c5 in 1
+
+Check Locked: 0
+0 == Check: 4
+Locked: 0, Balanced: 0
+1 . == Check: 3
+Locked: 0, Balanced: 0
+2 . == Check: 2
+Locked: 0, Balanced: 1
+=== Lock: 2
+erase: 2, 2
+from: 2 ----- > 1
+to: 1-----> 2
+from: 1 ----- > 0
+to: 1-----> 2
+=========== New Iteration =========
+===== Cells =====
+1: 1 => n1 n3 
+2: 0 => n1 n2 
+3: 0 => n1 
+4: 0 => n2 
+5: 1 => n3 
+===== Nets =====
+n1: c1 c2 c3 
+(A, B) 2, 1
+n2: c2 c4 
+(A, B) 2, 0
+n3: c1 c5 
+(A, B) 0, 2
+===== Buckets =====
+Total Bucket: 2
+gain (-1) :c5 c4 
+gain (0) :c3 c1 
+
+PMax = 2
+Total (A, B) 3, 2
+Cut Size = 1
+======== Result ======
+c1 in 1
+c2 in 0
+c3 in 0
+c4 in 0
+c5 in 1
+
+Check Locked: 0
+0 == Check: 1
+Locked: 0, Balanced: 0
+1 . == Check: 3
+Locked: 0, Balanced: 1
+=== Lock: 3
+erase: 3, 3
+from: 2 ----- > 1
+to: 1-----> 2
+=========== New Iteration =========
+===== Cells =====
+1: 1 => n1 n3 
+2: 0 => n1 n2 
+3: 1 => n1 
+4: 0 => n2 
+5: 1 => n3 
+===== Nets =====
+n1: c1 c2 c3 
+(A, B) 1, 2
+n2: c2 c4 
+(A, B) 2, 0
+n3: c1 c5 
+(A, B) 0, 2
+===== Buckets =====
+Total Bucket: 1
+gain (-1) :c5 c4 c1 
+
+PMax = 2
+Total (A, B) 2, 3
+Cut Size = 1
+======== Result ======
+c1 in 1
+c2 in 0
+c3 in 0
+c4 in 0
+c5 in 1
+
+Check Locked: 0
+0 == Check: 1
+Locked: 0, Balanced: 1
+=== Lock: 1
+erase: 1, 1
+from: 2 ----- > 1
+to: 1-----> 2
+from: 2 ----- > 1
+to: 0-----> 1
+=========== New Iteration =========
+===== Cells =====
+1: 0 => n1 n3 
+2: 0 => n1 n2 
+3: 1 => n1 
+4: 0 => n2 
+5: 1 => n3 
+===== Nets =====
+n1: c1 c2 c3 
+(A, B) 2, 1
+n2: c2 c4 
+(A, B) 2, 0
+n3: c1 c5 
+(A, B) 1, 1
+===== Buckets =====
+Total Bucket: 2
+gain (-1) :c4 
+gain (1) :c5 
+
+PMax = 2
+Total (A, B) 3, 2
+Cut Size = 1
+======== Result ======
+c1 in 1
+c2 in 0
+c3 in 0
+c4 in 0
+c5 in 1
+
+Check Locked: 0
+0 == Check: 5
+Locked: 0, Balanced: 0
+=========== New Iteration =========
+===== Cells =====
+1: 0 => n1 n3 
+2: 0 => n1 n2 
+3: 1 => n1 
+4: 0 => n2 
+5: 1 => n3 
+===== Nets =====
+n1: c1 c2 c3 
+(A, B) 2, 1
+n2: c2 c4 
+(A, B) 2, 0
+n3: c1 c5 
+(A, B) 1, 1
+===== Buckets =====
+Total Bucket: 2
+gain (-1) :c4 
+gain (1) :c5 
+
+PMax = 2
+Total (A, B) 3, 2
+Cut Size = 1
+======== Result ======
+c1 in 1
+c2 in 0
+c3 in 0
+c4 in 0
+c5 in 1
+
+Check Locked: 0
+0 == Check: 4
+Locked: 0, Balanced: 1
+=== Lock: 4
+erase: 4, 4
+from: 2 ----- > 1
+to: 0-----> 1
+=========== New Iteration =========
+===== Cells =====
+1: 0 => n1 n3 
+2: 0 => n1 n2 
+3: 1 => n1 
+4: 1 => n2 
+5: 1 => n3 
+===== Nets =====
+n1: c1 c2 c3 
+(A, B) 2, 1
+n2: c2 c4 
+(A, B) 1, 1
+n3: c1 c5 
+(A, B) 1, 1
+===== Buckets =====
+Total Bucket: 1
+gain (1) :c5 
+
+PMax = 2
+Total (A, B) 2, 3
+Cut Size = 1
+======== Result ======
+c1 in 1
+c2 in 0
+c3 in 0
+c4 in 0
+c5 in 1
+
+Check Locked: 0
+0 == Check: 5
+Locked: 0, Balanced: 1
+=== Lock: 5
+erase: 5, 5
+from: 1 ----- > 0
+to: 1-----> 2
+===== Cells =====
+1: 0 => n1 n3 
+2: 0 => n1 n2 
+3: 1 => n1 
+4: 1 => n2 
+5: 0 => n3 
+===== Nets =====
+n1: c1 c2 c3 
+(A, B) 2, 1
+n2: c2 c4 
+(A, B) 1, 1
+n3: c1 c5 
+(A, B) 2, 0
+===== Buckets =====
+Total Bucket: 0
+
+PMax = 2
+Total (A, B) 3, 2
+Cut Size = 1
+======== Result ======
+c1 in 1
+c2 in 0
+c3 in 0
+c4 in 0
+c5 in 1
+
+Check Locked: 1
